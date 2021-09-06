@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+   <title>Ejercicio logo en javascript_Juan Diego Castro</title>
+</head>
+<body>
+   <canvas id="logo" width="605px" height="500px" style="border: 2px solid gray;"></canvas>
+
+
+   <script>
+     window.addEventListener('load', () => {
+       let canvasLineas = document.getElementById('logo');
+       let ctx = canvasLineas.getContext('2d');
+
+
+    ctx.beginPath();
+    ctx.fillStyle = "yellow";
+    ctx.strokeStyle = 'yellow';
+    ctx.arc(305, 225, 164, 0, Math.PI * 2, true);
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.fillStyle = "blue";
+    ctx.strokeStyle = 'blue';
+    ctx.arc(305, 225, 130, 0, Math.PI * 2, true);
+    ctx.fill();
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.fillStyle = "red";
+    ctx.strokeStyle = 'red';
+    ctx.arc(305, 180, 84, 0, Math.PI * 2, true);
+    ctx.fill();
+    ctx.stroke();
+
+       
+     });
+  </script>  
+</body>
+</html>
